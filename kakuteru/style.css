@@ -1,0 +1,246 @@
+/* ===== Webサイト全体のスタイル ===== */
+<style type="text/css">
+
+
+   /* ▼タブ機能の掲載領域の装飾(※必須ではありません) */
+   .tabbox { margin: 0px; padding: 1em; background-color: #ddddff; }
+
+   /* ▼タブ機能を制御するラジオボタン(非表示にする) */
+   .tabbox input { display: none; }
+
+   /* ▼タブ(共通装飾＋非選択状態の装飾) */
+   .tab {
+      display: inline-block;
+      border-width: 0px 0px 0px 0px;
+      border-style: solid;
+      border-color: black;
+      border-radius: 0.75em 0.75em 0px 0px;
+      padding: 0.75em 1em;
+      color: #333c5e;
+      background-color: #8da0b6;
+      font-weight: bold;
+      font-family: Sawarabi Mincho;
+     
+   }
+
+   /* ▼タブにマウスポインタが載った際の装飾 */
+   .tab:hover {
+      background-color: #ddddff;
+      color: #333c5e;
+      cursor: pointer;
+   }
+
+   /* ▼チェックが入っているラジオボタンの隣にあるタブの装飾(＝選択状態のタブ) */
+   input:checked + .tab {
+      color: #ebf6f7;
+      background-color: #333c5e;
+      position: relative;
+      z-index: 10;
+   }
+
+   /* ▼タブの中身(共通装飾＋非選択状態の装飾) */
+   .tabcontent {
+      display: none;
+      margin-top: -1px;
+      padding: 0em;
+      position: relative;
+      z-index: 0;
+      background-color: #ebf6f7;
+   }
+
+   /* ▼チェックが入っているラジオボタンに対応するタブの中身を表示する */
+   #tabcheck1:checked ~ #tabcontent1 { display: block; }
+   #tabcheck2:checked ~ #tabcontent2 { display: block; }
+   #tabcheck3:checked ~ #tabcontent3 { display: block; }
+   #tabcheck4:checked ~ #tabcontent4 { display: block; }
+   #tabcheck5:checked ~ #tabcontent5 { display: block; }
+   #tabcheck6:checked ~ #tabcontent6 { display: block; }
+   #tabcheck7:checked ~ #tabcontent7 { display: block; }
+   #tabcheck8:checked ~ #tabcontent8 { display: block; }
+   #tabcheck9:checked ~ #tabcontent9 { display: block; }
+   #tabcheck10:checked ~ #tabcontent10 { display: block; }
+   #tabcheck11:checked ~ #tabcontent11 { display: block; }
+   #tabcheck12:checked ~ #tabcontent12 { display: block; }
+
+
+</style>
+
+
+
+
+
+/* html */
+html {
+  height: 100%;
+}
+
+/* body */
+body {
+  font-family: sans-serif;
+  height: 100%;
+  margin: 0;
+}
+
+/* h1見出し */
+h1 {
+  color: #ebf6f7;/* フォントの色 */
+  font-size: 110px;/* フォントの大きさ */
+  font-family: Sawarabi Mincho;/* フォントの種類 */
+  text-align: center;/* 文字・画像を中央にそろえる */
+  padding: 20px;/* 内側の余白 */
+  margin: 30px;/* 外側の余白 */
+}
+
+/* ===== ヘッダーのスタイル ===== */
+/* ヘッダーの箱 */
+header {
+  background-image: url(img/29172576_m.jpg);/* 背景画像 */
+  height: 500px;/* 高さ */
+  padding-top: 150px;/* 上がわの余白 */
+  }
+
+
+/* ===== お店紹介のスタイル ===== */
+/* セクション */
+.shop {
+  background-color: #333c5e;/* 背景の色 */
+  font-family: Sawarabi Mincho;
+  font-size: 20px;
+  color: #ebf6f7;
+  padding: 50px;
+  padding-top: 20px;
+}
+
+/* h2見出し */
+.title {
+  font-size: 30px;
+  font-family: Sawarabi Mincho;
+  border-left-style: solid;
+  border-left-width: 10px;
+  padding-left: 20px;
+  margin-bottom: 30px;
+}
+
+/* 段落 */
+
+
+/* 画像 */
+
+
+/* ===== パン紹介のスタイル ===== */
+.photo {
+  padding: 30px;
+  padding-left: 50px;
+  background-color: #333c5e;
+  height: 6150px;
+}
+
+/* h2見出し */
+.photo h2 {
+  color: #ebf6f7;
+  border-color: #ebf6f7;
+}
+
+/* h3見出し */
+.photo h3 {
+  color: #333c5e;
+  font-size: 20px;
+  padding-left: 10px;
+  padding-top: 5px;
+}
+
+/* 段落 */
+.photo p {
+  color: #333c5e;
+  font-size: 15px;
+  float: right;
+
+}
+
+/* 大きな箱 */
+
+
+.small {
+  background-color: #ddddff;
+  width: 510px;
+  padding: 8px;
+  margin: 15px;
+  box-shadow: 10px 10px 20px #000000;
+  font-family: Sawarabi Mincho;
+  float: left;
+}
+
+
+.small img {   /*
+  float: left;*/
+  padding-left: 10px;
+  padding-top: : 10px;
+  padding-bottom: 10px;
+}
+
+.small p{
+  padding-right: 10px;
+}
+
+/* 小さな箱 */
+/* 箱 */
+
+
+
+
+/* 表の見出しセル */
+
+/* 表の見出しセル（季節） */
+
+/* ===== アクセス情報のスタイル ===== */
+/* セクション */
+
+
+/* h3見出し */
+
+
+
+
+.aiueo{
+  background-color: #ebf6f7;
+  color: #333c5e;
+   font-family: Sawarabi Mincho;
+  font-size: 20px;
+  padding-top: 10px;
+}
+
+.aeiou{
+   background-color: #ebf6f7;/* 背景の色 */
+  font-family: Sawarabi Mincho;
+  font-size: 20px;
+  color: #333c5e;
+  padding: 50px;
+  padding-top: 10px;
+  padding-bottom: 12px;
+}
+
+
+/***トップへ戻るボタン***/
+#page-top {
+    display: block;
+    font-weight: bold;
+    padding: .7em;
+    text-align: center;
+    background: #8da0b6; /*背景色*/
+    color: #333c5e; /*文字色*/
+    transition: .3s;
+       font-family: Sawarabi Mincho;
+}
+/***マウスオーバー時***/
+#page-top:hover {
+    background: #ddddff; /*背景色*/
+    color: #333c5e; /*文字色*/
+}
+/***トップへ戻るボタンここまで***/
+
+/* フッター */
+footer {
+  text-align: center;
+  background-color: #000000;
+  color: #ebf6f7;
+}
