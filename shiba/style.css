@@ -1,0 +1,248 @@
+/* ===== Webサイト全体のスタイル ===== */
+/* html */
+html {
+  height: 100%;
+}
+
+/* body */
+body {
+  font-family: sans-serif;
+  height: 100%;
+  margin: 0;
+}
+
+/* h1見出し */
+h1 {
+  color: #ffffff;/* フォントの色 */
+  font-size: 20px;/* フォントの大きさ */
+  font-family: sans-serif;
+  text-shadow:1px 1px 0 #ffcaca, -1px -1px 0 #ffcaca,
+              -1px 1px 0 #ffcaca, 1px -1px 0 #ffcaca,
+              0px 1px 0 #ffcaca,  0-1px 0 #ffcaca,
+              -1px 0 0 #ffcaca, 1px 0 0 #ffcaca;/* フォントの種類 *//* 外側の余白 */
+}
+
+/* ===== ヘッダーのスタイル ===== */
+/* ヘッダーの箱 */
+header {
+  height: 20px;
+  position: fixed;
+  z-index:3;
+}
+nav{
+  background-color: #7BAA17;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  background: rgba(123,170,23,0.8);
+
+  
+}
+
+nav a{
+ color: #FEEEED; 
+ text-decoration: none;
+}
+nav a:hover {
+ color: #FFD768; 
+}
+nav ul{
+ margin-top: 0px;
+ margin-bottom: 0px;
+}
+nav li{
+  display: inline-block;
+  margin-right: 30px;
+}
+/* ===== お店紹介のスタイル ===== */
+/* セクション */
+.top img{
+  width: 100%;
+}
+.story {
+  background-image: url(img/back1.png);
+  background-color: #d0fccc;/* 背景の色 */
+  color: #ffffff;
+  padding: 30px;
+  margin-top: 0px;
+}
+
+/* h2見出し */
+.title {
+    color: #ffffff;/* フォントの色 */
+  font-family: sans-serif;
+  text-shadow:1px 1px 0 #ffcaca, -1px -1px 0 #ffcaca,
+              -1px 1px 0 #ffcaca, 1px -1px 0 #ffcaca,
+              0px 1px 0 #ffcaca,  0-1px 0 #ffcaca,
+              -1px 0 0 #ffcaca, 1px 0 0 #ffcaca;
+  font-size: 25px;
+  text-align: center;
+}
+
+/* 段落 */
+.story h2{
+  border-color: #094F6A;
+}
+.story p {
+  z-index:2;
+  color: #E5CE94;
+  font-size: 20px;
+  background: rgba(255,255,255,0.8);
+  padding: 20px;
+  border-radius: 30px;
+  height: 300px;
+}
+
+/* 画像 */
+.story img {
+  float: right;/* 画像や箱の回り込み */
+  opacity: .9;
+}
+
+
+/* ===== パン紹介のスタイル ===== */
+/* セクション */
+.chara {
+  padding: 30px;
+  background-image: url(img/back5.png);
+  background-repeat: no-repeat;
+  background-size: 100%;
+  width: 1
+  background-color: #ffffff;
+}
+
+/* h2見出し */
+.chara h2 {
+  border-color: #094F6A;
+}
+
+/* h3見出し */
+.chara h3 {
+  color: #094F6A;
+  font-size: 20px;
+    text-shadow:1px 1px 0 #eeffff, -1px -1px 0 #eeffff,
+              -1px 1px 0 #eeffff, 1px -1px 0 #eeffff,
+              0px 1px 0 #eeffff,  0-1px 0 #eeffff,
+              -1px 0 0 #eeffff, 1px 0 0 #eeffff;
+}
+.chara img{
+  float:left;
+}
+/* 段落 */
+.chara p {
+  font-size: 18px;
+  color: #ffffff;/* 画像や箱の回り込みをやめる */
+}
+
+/* 大きな箱 */
+.big {
+  background-color: #ffffff;
+  width: 500px;/* 横幅 */
+  padding: 15px;
+  margin: 20px;
+  box-shadow: 10px 10px 20px #000000;/* 影 */
+  float: left;
+  transform: rotate(-5deg);/* 回転させる */
+}
+
+/* 小さな箱 */
+.small {
+  background-color: #ffffff;
+  width: 240px;
+  padding: 15px;
+  margin: 20px;
+  box-shadow: 10px 10px 20px #000000;
+}
+
+/* 箱 */
+.box {
+  float: left;
+}
+
+
+/* ===== 値段表のスタイル ===== */
+/* セクション */
+.item {
+  padding: 30px;
+  background-image: url(img/back3.png);
+  background-repeat: no-repeat;
+  background-size: 100%;
+}
+
+/* h2見出し */
+.item h2 {
+  border-color: #094F6A;
+}
+
+/* 表 */
+.item table {
+  color: #ffffff;
+  border-collapse: collapse;
+  margin: 0 auto;/* 表の隙間（すきま） */
+  width: 60%;
+  border-radius: 20px;
+  background: rgba(252,202,202,0.8);
+}
+
+/* 表のセル */
+.item td {
+  border: 0px;
+  padding: 10px;
+  text-align: center;
+}
+
+/* 表の見出しセル */
+.item th {
+  border: 1px solid #000000;
+  padding: 10px;
+  background-color: #ffcc11;
+  text-align: left;
+}
+
+/* 表の見出しセル（季節） */
+.season th {
+  background-color: #33ddcc;
+}
+
+
+/* ===== アクセス情報のスタイル ===== */
+/* セクション */
+.news {
+  padding: 30px;
+  background-image: url(img/back4.png);
+  background-repeat: no-repeat;
+  background-size: 100%;
+}
+
+/* h3見出し */
+.news h3 {
+  font-size: 30px;
+  margin-top: 0px;
+  color: #FFD768;
+  float: right;
+}
+
+/* リスト */
+.news ul {
+  list-style-type: none;/* リストのマーカー */
+  padding-left: 0px;
+}
+
+/* 箱 */
+.news div {
+  background-color: #ffffff;
+  width: 1000px;
+  margin:15px;
+  padding: 5px;
+  border-radius: 20px;
+  box-shadow: 10px 10px 20px #7d7d7d;
+}
+.news img{
+  width: 290px;
+  border-radius: 20px;
+}
+/* フッター */
+footer {
+  text-align: center;
+  background-color: #ffcaca;
+  color: #ffffff;
+}
